@@ -3,60 +3,60 @@
  ********************/
 
 function moreThan5(num){
-  return answer = num > 5;
+  return num > 5;
 }
 
 function isNewTopScore(score,topScore){
-  return answer = score > topScore;
+  return score > topScore;
 }
 
 function isInDanger(grade){
-  return answer = grade >= 60 && grade <= 71;
+  return grade >= 60 && grade <= 71;
 }
 
 function isCoasting(grade){
-  return answer = grade >= 72 && grade <= 83;
+  return grade >= 72 && grade <= 83;
 }
 
 function isSucceeding(grade){
-  return answer = grade >= 84 && grade <= 92;
+  return grade >= 84 && grade <= 92;
 }
 function isFailing(grade){
-  return answer = grade < 60;
+  return grade < 60;
 }
 
 function isAcing(grade){
-  return answer = grade > 92;
+  return grade > 92;
 }
 
 function isStudent(string){
-  return answer = string === 'student';
+  return string === 'student';
 }
 
 function isTeacher(string){
-  return answer = string === 'teacher';
+  return string === 'teacher';
 }
 
 function isAdmin(string){
-  return answer = string === 'admin';
+  return string === 'admin';
 }
 
 function isElementary(string){
-  return answer = string === 'elementary';
+  return string === 'elementary';
 }
 
 function  areDifferentPeople(name1, name2){
-  return answer = name1 !== name2;
+  return name1 !== name2;
 }
 
 function isMiddleSchoolTeacher(role, level){
-  return answer = role === 'teacher' && level >= 6 && level <= 8;
+  return role === 'teacher' && level >= 6 && level <= 8;
 }
 
 
 
 function notAnElementarySchoolAdministrator(level, role){
-  return answer = level !== 'elementary' || role !== 'admin';
+  return level !== 'elementary' || role !== 'admin';
 }
 
 
