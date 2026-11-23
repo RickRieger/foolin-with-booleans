@@ -11,11 +11,11 @@ function isNewTopScore(score,topScore){
 }
 
 function isInDanger(grade){
-  return grade >= 60 && grade <= 71;
+  return grade >= 60 && grade < 72;
 }
 
 function isCoasting(grade){
-  return grade >= 72 && grade <= 83;
+  return grade >= 72 && grade < 84;
 }
 
 function isSucceeding(grade){
