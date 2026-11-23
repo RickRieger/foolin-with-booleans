@@ -2,68 +2,66 @@
  * YOUR CODE BELOW! *
  ********************/
 
-function moreThan5(num){
+// Comparing numbers
+function moreThan5(num) {
   return num > 5;
 }
 
-function isNewTopScore(score,topScore){
+function isNewTopScore(score, topScore) {
   return score > topScore;
 }
 
-function isInDanger(grade){
-  return grade >= 60 && grade < 72;
-}
-
-function isCoasting(grade){
-  return grade >= 72 && grade < 84;
-}
-
-function isSucceeding(grade){
-  return grade >= 84 && grade <= 92;
-}
-function isFailing(grade){
+// Grade ranges (each upper bound is "below the next range" so decimals like
+// 71.5 still land in a category)
+function isFailing(grade) {
   return grade < 60;
 }
 
-function isAcing(grade){
+function isInDanger(grade) {
+  return grade >= 60 && grade < 72;
+}
+
+function isCoasting(grade) {
+  return grade >= 72 && grade < 84;
+}
+
+function isSucceeding(grade) {
+  return grade >= 84 && grade <= 92;
+}
+
+function isAcing(grade) {
   return grade > 92;
 }
 
-function isStudent(string){
-  return string === 'student';
+// Comparing strings
+function isStudent(role) {
+  return role === 'student';
 }
 
-function isTeacher(string){
-  return string === 'teacher';
+function isTeacher(role) {
+  return role === 'teacher';
 }
 
-function isAdmin(string){
-  return string === 'admin';
+function isAdmin(role) {
+  return role === 'admin';
 }
 
-function isElementary(string){
-  return string === 'elementary';
+function isElementary(level) {
+  return level === 'elementary';
 }
 
-function  areDifferentPeople(name1, name2){
+function areDifferentPeople(name1, name2) {
   return name1 !== name2;
 }
 
-function isMiddleSchoolTeacher(role, level){
-  return role === 'teacher' && level >= 6 && level <= 8;
+// Combining checks (reusing the functions above)
+function isMiddleSchoolTeacher(role, level) {
+  return isTeacher(role) && level >= 6 && level <= 8;
 }
 
-
-
-function notAnElementarySchoolAdministrator(level, role){
-  return level !== 'elementary' || role !== 'admin';
+function notAnElementarySchoolAdministrator(level, role) {
+  return !(isElementary(level) && isAdmin(role));
 }
-
-
-
-
-
-
 
 /********************************************************************************************
  * CODE BELOW IS FOR EXPORTING THE VARIABLES AND FUNCTIONS YOU WROTE ABOVE TO MAIN.TEST.JS. *
